@@ -123,6 +123,7 @@ def itog():
 
 
 
+
 window = tk.Tk()
 window.title("Калькулятор")
 window.geometry("350x350")
@@ -136,6 +137,8 @@ button_mul = tk.Button(window, bg="green", width=3, height=2, command = instr)
 button_mul.place(x=180, y=75)
 button_div = tk.Button(window, bg="grey", width=3, height=2, command = v_sostave)
 button_div.place(x=220, y=75)
+button_itog = tk.Button(window,bg = "white", width=5, height=1, text = "Итог", command = itog)
+button_itog.place(x = 100, y = 295)
 
 number1_entry = tk.Entry(window, width=24)
 number1_entry.place(x=100, y=50)
